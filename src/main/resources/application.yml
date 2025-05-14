@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+  application:
+    name: maven-project
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+logging:
+  config: classpath:log4j2.xml
